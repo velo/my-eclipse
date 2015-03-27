@@ -1,0 +1,397 @@
+@import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_basestyle.css");
+@import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_globalstyle.css"); /* Remove this to have ONLY the main IDE shell dark */
+@import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_partstyle.css");
+
+.jeeeyul-custom-theme{
+	/* This class must appear first. */
+}
+
+/**************************************************
+ * Window
+ **************************************************/
+Shell.MTrimmedWindow {
+	margin-top: 5px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-left: 5px;
+	background-color: #4d5052;
+}
+
+.MPartSashContainer {
+	jsash-width : 6px;
+	background-color: #4d5052;
+}
+
+
+
+/**************************************************
+ * Main Toolbar
+ **************************************************/
+#org-eclipse-ui-main-toolbar {
+	background-color:#4d5052 #4d5052 100%;
+}
+
+#org-eclipse-ui-main-toolbar > .Draggable {
+	handle-image:
+		url(jeeeyul://drag-handle?height=22&background-color=#4d5052&embossed=false);
+}
+
+#org-eclipse-ui-main-toolbar > .TrimStack {
+	frame-image: none;
+	handle-image:
+		url(jeeeyul://drag-handle?height=22&background-color=#4d5052&embossed=false);
+}
+
+#org-eclipse-ui-main-toolbar #PerspectiveSwitcher {
+	background-color: #4d5052 #293134 100%;
+	handle-image: none;
+	eclipse-perspective-keyline-color: #4d5052;
+}
+
+#org-eclipse-ui-main-toolbar #PerspectiveSwitcher ToolBar {
+	jtool-item-color : #ffffff;
+}
+
+
+
+/**************************************************
+ * Status Bar
+ **************************************************/
+#org-eclipse-ui-trim-status{
+	background-color:#4d5052 #393939 100%;
+}
+
+#org-eclipse-ui-trim-status,
+#org-eclipse-ui-trim-status *
+{
+	color : #24272a;
+}
+
+#org-eclipse-ui-trim-status ToolBar{
+	jtool-item-color : #24272a;
+}
+
+#org-eclipse-ui-trim-status .Draggable {
+	handle-image:
+		url(jeeeyul://drag-handle?height=22&background-color=#434445&embossed=false);
+}
+
+#org-eclipse-ui-trim-status .TrimStack {
+	handle-image:
+		url(jeeeyul://drag-handle?height=22&background-color=#434445&embossed=false);
+	frame-image: url(jeeeyul://frame?background-color=#434445);
+	frame-cuts: 4px 2px 5px 16px;
+}
+
+
+
+/**************************************************
+ * Trim Stack
+ **************************************************/
+Shell.MTrimmedWindow > .MTrimBar > .TrimStack {
+	frame-image: url(jeeeyul://frame?background-color=#4d5052);
+	frame-cuts: 4px 2px 5px 16px;
+	handle-image:
+		url(jeeeyul://drag-handle?height=22&background-color=#4d5052&embossed=false);
+}
+
+Shell.MTrimmedWindow > .MTrimBar > .MToolBar.Draggable {
+	handle-image:
+		url(jeeeyul://drag-handle?height=22&background-color=#4d5052&embossed=false);
+}
+
+
+
+/**************************************************
+ * Inactive Part Stack
+ **************************************************/
+.MPartStack {
+	swt-tab-renderer: url('bundleclass://net.jeeeyul.eclipse.themes/net.jeeeyul.eclipse.themes.rendering.JeeeyulsTabRenderer');
+	swt-mru-visible: true;
+	
+	/* layout */
+	swt-tab-height: 30px;
+	jtab-border-radius: 0px;
+	jtab-spacing: 0px;
+	jtab-item-padding: 0px 9px;
+	jtab-item-horizontal-spacing: 0px;
+	jtab-padding : 0px;
+	jtab-truncate-tab-items : false;
+	jtab-use-ellipses : false;
+	jtab-minimum-characters : 1;
+	jtab-close-button-alignment : baseline;
+	
+	jtab-margin : 0px 1px 1px 0px;
+	jtab-shadow-color: none;
+	jtab-shadow-position: 0px 0px;
+	jtab-shadow-radius: 0px;
+	
+	/* tab background */
+	jtab-header-background : #393939 #1e2021 100%;
+	jtab-border-color : #313335 #313335 #313335 2%100%;
+	background : #393939;
+	
+	/* selected tabs */
+	jtab-selected-tab-background: #4d5052 #393939 100%;
+	jtab-selected-border-color: #313335 #313335 100%;
+	jtab-selected-text-shadow-color: none;
+
+	/* unselected tabs */
+	jtab-unselected-tabs-background: #393939 #1e2021 100%;
+	
+	jtab-unselected-border-color: #313335 #313335 100%;
+	jtab-unselected-text-shadow-color: none;
+	
+	/* hover tabs */
+	jtab-hover-color : #bcc1c7;
+	jtab-hover-tabs-background: #8f8f90 #8f8f90 100%;
+	
+	jtab-hover-border-color: none;
+	jtab-hover-text-shadow-color: none;
+	
+	jtab-close-button-color: #cdcdcd;
+	jtab-close-button-hot-color: #b05656;
+	jtab-close-button-active-color: #dd1b1b;
+	jtab-close-button-line-width: 2px;
+	
+	jtab-chevron-color: #6e6e6e;
+}
+
+.MPartStack>CTabItem {
+	/* unselected tab text */
+	color: #bcc1c7;
+}
+
+.MPartStack>CTabItem:selected {
+	/* selected tab text */
+	color: #bcc1c7;
+}
+
+
+/**************************************************
+ * Active Part Stack
+ **************************************************/
+.MPartStack.active {
+	swt-tab-renderer: url('bundleclass://net.jeeeyul.eclipse.themes/net.jeeeyul.eclipse.themes.rendering.JeeeyulsTabRenderer');
+	
+	/* tab background */
+	jtab-header-background : #393939 #1e2021 100%;
+	jtab-border-color : #313335 #313335 #313335 2%100%;
+	background : #393939;
+	
+	/* selected tabs */
+	jtab-selected-tab-background: #4d5052 #393939 100%;
+	jtab-selected-border-color: #313335 #313335 100%;
+	jtab-selected-text-shadow-color: none;
+
+	/* unselected tabs */
+	jtab-unselected-tabs-background: #393939 #1e2021 100%;
+	
+	jtab-unselected-border-color: #313335 #313335 100%;
+	jtab-unselected-text-shadow-color: none;
+	
+	/* hover tabs */
+	jtab-hover-color : #bcc1c7;
+	jtab-hover-tabs-background: #8f8f90 #8f8f90 100%;
+	
+	jtab-hover-border-color: none;
+	jtab-hover-text-shadow-color: none;
+	
+	jtab-close-button-color: #cdcdcd;
+	jtab-close-button-hot-color: #b05656;
+	jtab-close-button-active-color: #dd1b1b;
+	jtab-close-button-line-width: 2px;
+	
+	jtab-chevron-color: #d0d0d0;
+}
+
+.MPartStack.active>CTabItem {
+	/* unselected tab text */
+	color: #bcc1c7;
+}
+
+.MPartStack.active>CTabItem:selected {
+	/* selected tab text */
+	color: #bcc1c7;
+}
+
+/**************************************************
+ * Busy Part
+ **************************************************/
+.MPart{
+	font-style: normal;
+}
+
+.MPart.busy {
+	font-style: italic;
+}
+
+
+
+/**************************************************
+ * Editor Part Stack
+ **************************************************/
+
+
+
+/**************************************************
+ * Empty Editor Stack
+ **************************************************/
+#org-eclipse-ui-editorss.MArea .MPartStack.empty{
+	jtab-header-background : #4d5052 #4d5052 100%;
+	jtab-border-color : none;
+	background : #4d5052;
+}
+
+
+
+/**************************************************
+ * Editors Area
+ **************************************************/
+CTabFolder#org-eclipse-ui-editorss.MArea{
+	swt-tab-renderer: url('bundleclass://net.jeeeyul.eclipse.themes/net.jeeeyul.eclipse.themes.rendering.JeeeyulsTabRenderer');
+	swt-tab-height: 10px;
+	jtab-header-background : #4d5052 #4d5052 100%;
+	jtab-border-color : none;
+	jtab-selected-tab-background: #4d5052 #4d5052 100%;
+	jtab-selected-border-color: none;
+	swt-single : true;
+	
+	jtab-margin : 0px;
+	jtab-shadow-color: none;
+	jtab-shadow-position: 0px 0px;
+	jtab-shadow-radius: 0px;
+	jtab-padding : 0px;
+}
+
+CTabFolder#org-eclipse-ui-editorss.MArea Composite.MPartSashContainer {
+	background-color: #4d5052;
+}
+
+
+
+/**************************************************
+ * Text Editor
+ **************************************************/
+.MPart.Editor Canvas {
+	background-color: #f0f0f0;
+}
+
+.MPart.Editor StyledText {
+	jeditor-line-style : none;
+	jeditor-line-color : #f0f0f0;
+	jeditor-range-indicator-color: #d1e3f7;
+}
+
+
+
+/**************************************************
+ * Customized Text Editor Support
+ **************************************************/
+.MPart Section StyledText
+{
+	background : jtexteditor-background;
+	color : jtexteditor-foreground;
+}
+
+
+
+/**************************************************
+ * Forms
+ **************************************************/
+.MPart FormHeading {
+	jtext-background: #ffffff #e7f1fb 100%;
+	color : #586a7e;
+	jbottom-keyline-1-color: #ffffff;
+	jbottom-keyline-2-color: #b1d1f3;
+}
+
+.MPart Section {
+	jtitle-bar-background-color:  #e7f1fb;
+	jtitle-bar-border-color:  #b1d1f3;
+	jtitle-bar-text-color :  #586a7e;
+	jtitle-bar-active-text-color :  #7b8fa5;
+}
+
+.MPart FormText {
+	hyperlink-color: #0000ff;
+	active-hyperlink-color: #11149b;
+}
+
+
+
+/**************************************************
+ * Others
+ **************************************************/
+.DragFeedback {
+	background-color: #ff6900;
+	jswt-alpha: 127;
+}
+
+
+
+/**************************************************
+ * User Custom CSS
+ **************************************************/
+/* Package Explorer */
+#org-eclipse-jdt-ui-PackageExplorer Tree {
+  font-family: "DejaVu Sans";  
+  font-size: 12;
+  background-color: #4D5052;  
+  color: #bcc1c7;
+}
+
+.MPartStack {
+  font-family: "DejaVu Sans";
+  font-size: 11;
+}
+
+/* 
+
+Editors 
+- remove the white line next to the number gutter
+
+*/
+#org-eclipse-e4-ui-compatibility-editor * {  
+  font-family: "Meslo LG S";
+  font-weight: normal;
+  font-size: 12;
+  background-color: #393939;
+}
+
+/* 
+Actually in the POM editor these are the tabs at the bottom 
+- changes the font of the tabs
+*/
+/* Actually in the POM editor these are the tabs at the bottom */
+#org-eclipse-e4-ui-compatibility-editor CTabItem {  
+  font-family: "Meslo LG S";
+  font-weight: normal;
+  font-size: 12;
+}
+
+/* Color of text in the status bar */
+#org-eclipse-ui-trim-status *{
+    color: #BCC1C7;
+}
+
+/**************************************************
+ * User Color and Font Changes
+ **************************************************/
+IEclipsePreferences#org-eclipse-ui-workbench {
+  preferences: '';
+}
+
+IEclipsePreferences#org-eclipse-ui-editors {
+  preferences:
+    'occurrenceIndicationColor=97,97,97'
+    'writeOccurrenceIndicationColor=148,133,103'
+    'searchResultIndicationColor=70,68,103'
+    'filteredSearchResultIndicationColor=63,63,106'
+    'linked.focus.color=70,100,165'
+    'linked.target.color=70,100,165'
+    'javaScriptOccurrenceIndicationColor=97,97,97'
+    'matchingTagIndicationColor=97,97,97'
+    'occurrenceIndicationColor=97,97,97'
+    'writeOccurrenceIndicationColor=148,133,103'
+}

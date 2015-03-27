@@ -1,0 +1,105 @@
+# Copyright (c) 2015 to Jason van Zyl
+# All rights reserved. This program and the accompanying materials                                                                                                                                          
+# are made available under the terms of the Eclipse Public License v1.0                                                                                                                                     
+# which accompanies this distribution, and is available at                                                                                                                                                  
+# http://www.eclipse.org/legal/epl-v10.html   
+#
+# This generates everything needed to create a distributions
+#
+# https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/packages/org.eclipse.epp.package.rcp.feature/feature.xml
+
+groupId: "io.tesla.ide"
+pluginId: "io.tesla.ide"
+featureId: "io.tesla.ide.feature"
+productId: "io.tesla.ide.product"
+productName: TakariIDE
+introImage: intro-takari.png
+tychoVersion: 0.19.0
+mavenVersion: "1.0.0-SNAPSHOT"
+version: "1.0.0.qualifier"
+cssTheme: io.takari.dark.theme
+applicationId: io.tesla.ide.application
+applicationClass: io.tesla.ide.TakariIde
+
+repos: 
+ - 
+  id: eclipse
+  url: http://download.eclipse.org/releases/luna 
+   
+platforms:
+ - osx
+
+modules:
+ - io.takari.dark
+ - io.tesla.ide
+ - io.tesla.ide.feature
+ - io.tesla.ide.product
+
+featurePlugins:
+ - io.tesla.ide
+ - io.takari.dark
+
+featureSets: 
+ -
+  eclipse:
+   features:
+    - id: org.eclipse.platform
+    - id: org.eclipse.platform.source
+    - id: org.eclipse.rcp
+    - id: org.eclipse.rcp.source
+    - id: org.eclipse.jdt
+    - id: org.eclipse.jdt.source
+    - id: org.eclipse.pde
+    - id: org.eclipse.pde.source
+    - id: org.eclipse.equinox.p2.user.ui
+    - id: org.eclipse.help
+    - id: org.eclipse.egit
+    - id: org.eclipse.jgit
+    - id: org.eclipse.wb.core.feature
+    - id: org.eclipse.wb.core.ui.feature
+    - id: org.eclipse.wb.layout.group.feature
+    - id: org.eclipse.wb.swt.feature
+    - id: org.eclipse.wb.rcp.feature
+    - id: io.tesla.ide.feature
+    - id: com.github.eclipsecolortheme.feature
+ -  
+  takari-team:
+   repo: https://otto.takari.io/content/sites/m2e.extras/takari-team/0.1.0/N/LATEST/
+   features:
+    - id: io.takari.m2e.team.feature
+ -    
+  m2eEgit:
+   repo: https://otto.takari.io/content/sites/m2e.extras/m2eclipse-egit/0.14.0/N/0.14.0.201401060018/
+   features:  
+    - id: org.sonatype.m2e.egit.feature
+ -    
+  nexuside:
+   repo: https://otto.takari.io/content/sites/m2e.extras/nexuside/1.0.0/N/1.0.0.201303100224/
+   features:  
+    - id: com.ifedorenko.m2e.nexusdev.feature
+ -    
+  onboarding:
+   repo: https://otto.takari.io/content/sites/m2e.extras/m2eclipse-onboarding/0.0.1/N/0.0.1.201406270046/
+   features:  
+    - id: io.tesla.m2e.onboarding.feature
+ -    
+  yedit:
+   repo: http://dadacoalition.org/yedit/
+   features:  
+    - id: org.dadacoalition.yedit
+ -    
+  xtend2:
+   repo: http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases
+   features:  
+    - id: org.eclipse.xtext.xtend2.sdk    
+ -    
+  eclipse-color-theme:
+   repo: https://repository.takari.io/content/sites/m2e.extras/eclipse-color-themes/1.1.0/N/LATEST/
+   features: 
+    - id: com.github.eclipsecolortheme.feature    
+ -    
+  chrometheme:
+   repo: http://eclipse.jeeeyul.net/update/
+   features: 
+    - id: net.jeeeyul.eclipse.themes.feature
+    

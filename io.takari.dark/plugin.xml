@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.e4.ui.css.swt.theme">
+      <theme
+            basestylesheeturi="css/takari-dark.css"
+            id="io.takari.dark.theme"
+            label="Takari Dark">
+      </theme>
+      <stylesheet
+            uri="css/takari-dark-ect.css">
+         <osgiresourcelocator
+               uri="platform:/plugin/io.takari.dark/">
+         </osgiresourcelocator>
+         <themeid
+               refid="io.takari.dark.theme">
+         </themeid>
+      </stylesheet>
+   </extension>
+
+</plugin>

@@ -1,0 +1,5 @@
+/* Configure the Eclipse Color Themes definition */
+
+IWorkbench {
+	eclipse-color-theme: url(takari-dark-ect.xml);
+}
