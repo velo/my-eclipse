@@ -11,5 +11,5 @@
   
   <artifactId>io.tesla.ide</artifactId>
   <packaging>eclipse-plugin</packaging>
-  <name>TakariIDE :: Plugin</name>
+  <name>VizIDE :: Plugin</name>
 </project>

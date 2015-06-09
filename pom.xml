@@ -6,7 +6,7 @@
   <artifactId>maven-ide-parent</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>TakariIDE :: Parent</name>
+  <name>VizIDE :: Parent</name>
   
   <!--
    |
@@ -21,7 +21,6 @@
   </properties>
 
   <modules>
-    <module>io.takari.dark</module>
     <module>io.tesla.ide</module>
     <module>io.tesla.ide.feature</module>
     <module>io.tesla.ide.product</module>
@@ -51,17 +50,12 @@
   <repositories>
     <repository>
       <id>eclipse</id>
-      <url>http://download.eclipse.org/releases/luna</url>
+      <url>http://download.eclipse.org/releases/mars</url>
       <layout>p2</layout>
     </repository>              
     <repository>
       <id>takari-team</id>
       <url>https://otto.takari.io/content/sites/m2e.extras/takari-team/0.1.0/N/LATEST/</url>
-      <layout>p2</layout>
-    </repository>              
-    <repository>
-      <id>m2eEgit</id>
-      <url>https://otto.takari.io/content/sites/m2e.extras/m2eclipse-egit/0.14.0/N/0.14.0.201401060018/</url>
       <layout>p2</layout>
     </repository>              
     <repository>
@@ -80,18 +74,23 @@
       <layout>p2</layout>
     </repository>              
     <repository>
-      <id>xtend2</id>
-      <url>http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases</url>
+      <id>formatter-plugin</id>
+      <url>http://velo.github.io/maven-formatter-plugin/p2/1.5.0</url>
       <layout>p2</layout>
     </repository>              
     <repository>
-      <id>eclipse-color-theme</id>
-      <url>https://repository.takari.io/content/sites/m2e.extras/eclipse-color-themes/1.1.0/N/LATEST/</url>
+      <id>grep-console</id>
+      <url>http://eclipse.schedenig.name</url>
       <layout>p2</layout>
     </repository>              
     <repository>
-      <id>chrometheme</id>
-      <url>http://eclipse.jeeeyul.net/update/</url>
+      <id>code-coverage</id>
+      <url>http://update.eclemma.org/</url>
+      <layout>p2</layout>
+    </repository>              
+    <repository>
+      <id>live-reload</id>
+      <url>http://download.jboss.org/jbosstools/mars/development/updates/core/</url>
       <layout>p2</layout>
     </repository>              
   </repositories>

@@ -11,5 +11,5 @@
   
   <artifactId>io.tesla.ide.feature</artifactId>
   <packaging>eclipse-feature</packaging>
-  <name>TakariIDE :: Feature</name>
+  <name>VizIDE :: Feature</name>
 </project>

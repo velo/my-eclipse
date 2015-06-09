@@ -69,5 +69,5 @@ template('templates/pom.product.mustache', "#{productId}/pom.xml", vars)
 system("mvn clean package")
 
 # Copy the lombok.jar into place
-FileUtils.cp("lombok.jar", "io.tesla.ide.product/target/products/io.tesla.ide.product/macosx/cocoa/x86_64/TakariIDE.app/Contents/MacOS")
+FileUtils.cp("lombok.jar", "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64")
 
