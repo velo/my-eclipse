@@ -1,4 +1,7 @@
-language: java
+language: ruby
+
+rvm:
+ - 2.1.2
 
 install:
   - sudo gem install mustache
