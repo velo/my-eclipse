@@ -76,6 +76,10 @@
     <feature id="name.schedenig.eclipse.grepconsole" installMode="root"/>
     <feature id="com.mountainminds.eclemma.feature" installMode="root"/>
     <feature id="org.jboss.tools.livereload.feature" installMode="root"/>
+    <feature id="org.eclipse.linuxtools.docker.feature" installMode="root"/>
+    <feature id="org.sweetlemonade.eclipse.json.feature" installMode="root"/>
+    <feature id="net.sourceforge.eclipsejetty.feature" installMode="root"/>
+    <feature id="org.pitest.pitclipse.feature" installMode="root"/>
   </features>
   
   <configurations>
