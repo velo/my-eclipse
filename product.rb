@@ -66,7 +66,7 @@ template('templates/product.mustache', "#{productId}/#{productId}", vars)
 template('templates/pom.product.mustache', "#{productId}/pom.xml", vars)
 
 # Run Maven
-system("mvn clean package")
+system("mvn clean package -B")
 
 # Copy the lombok.jar into place
 FileUtils.cp("lombok.jar", "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64")
