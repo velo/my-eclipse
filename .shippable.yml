@@ -1,4 +1,8 @@
 language: java
 
 install:
+  - gem install mustache
+
+script:
   - ./product.rb
+  
