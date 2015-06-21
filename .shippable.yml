@@ -1,7 +1,7 @@
 language: java
 
 install:
-  - gem install mustache
+  - sudo gem install mustache
 
 script:
   - ./product.rb
