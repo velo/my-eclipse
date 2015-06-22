@@ -1,3 +1,5 @@
+[![Build Status](https://api.shippable.com/projects/5587309dedd7f2c0522bf51e/badge?branchName=master)](https://app.shippable.com/projects/5587309dedd7f2c0522bf51e/builds/latest)
+
 # How to build your own Eclipse distribution
 
 Right now if you want to build your own Eclipse distribution edit the `product.yml` file and run the following command:
