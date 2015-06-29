@@ -109,11 +109,6 @@
       <layout>p2</layout>
     </repository>              
     <repository>
-      <id>docker</id>
-      <url>http://download.eclipse.org/linuxtools/updates-docker-nightly/</url>
-      <layout>p2</layout>
-    </repository>              
-    <repository>
       <id>json-editor</id>
       <url>https://bitbucket.org/denmiroch/jsontools/src/default/JsonSite/</url>
       <layout>p2</layout>
@@ -126,6 +121,16 @@
     <repository>
       <id>mutation-tests</id>
       <url>http://eclipse.pitest.org/release</url>
+      <layout>p2</layout>
+    </repository>              
+    <repository>
+      <id>m2eclipse-buildhelper</id>
+      <url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/</url>
+      <layout>p2</layout>
+    </repository>              
+    <repository>
+      <id>m2eclipse-wtp</id>
+      <url>http://download.eclipse.org/m2e-wtp/milestones/mars/1.2.0/</url>
       <layout>p2</layout>
     </repository>              
   </repositories>
