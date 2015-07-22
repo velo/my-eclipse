@@ -109,11 +109,6 @@
       <layout>p2</layout>
     </repository>              
     <repository>
-      <id>json-editor</id>
-      <url>https://bitbucket.org/denmiroch/jsontools/src/default/JsonSite/</url>
-      <layout>p2</layout>
-    </repository>              
-    <repository>
       <id>jetty-launcher</id>
       <url>http://eclipse-jetty.github.io/update/</url>
       <layout>p2</layout>

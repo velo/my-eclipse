@@ -87,11 +87,7 @@ featureSets:
    repo: http://download.jboss.org/jbosstools/mars/development/updates/core/
    features: 
     - id: org.jboss.tools.livereload.feature
- -
-  json-editor:
-   repo: https://bitbucket.org/denmiroch/jsontools/src/default/JsonSite/
-   features: 
-    - id: org.sweetlemonade.eclipse.json.feature
+    - id: org.jboss.ide.eclipse.as.feature
  -
   jetty-launcher:
    repo: http://eclipse-jetty.github.io/update/
