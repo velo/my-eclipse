@@ -48,66 +48,59 @@ featureSets:
     - id: org.eclipse.linuxtools.docker.feature
  -
 
-  takari-team:
-   repo: https://otto.takari.io/content/sites/m2e.extras/takari-team/0.1.0/N/LATEST/
-   features:
-    - id: io.takari.m2e.team.feature
- -
-  nexuside:
-   repo: https://otto.takari.io/content/sites/m2e.extras/nexuside/1.0.0/N/1.0.0.201303100224/
-   features:  
-    - id: com.ifedorenko.m2e.nexusdev.feature
- -
   onboarding:
    repo: https://otto.takari.io/content/sites/m2e.extras/m2eclipse-onboarding/0.0.1/N/0.0.1.201406270046/
-   features:  
+   features:
     - id: io.tesla.m2e.onboarding.feature
  -
   yedit:
    repo: http://dadacoalition.org/yedit/
-   features:  
+   features:
     - id: org.dadacoalition.yedit.feature
  -
   formatter-plugin:
    repo: http://velo.github.io/maven-formatter-plugin/p2/1.5.0
-   features: 
+   features:
     - id: com.marvinformatics.formatter.feature
  -
   grep-console:
    repo: http://eclipse.schedenig.name
-   features: 
+   features:
     - id: name.schedenig.eclipse.grepconsole
  -
   code-coverage:
    repo: http://update.eclemma.org/
-   features: 
+   features:
     - id: com.mountainminds.eclemma.feature
  -
   live-reload:
    repo: http://download.jboss.org/jbosstools/mars/development/updates/core/
-   features: 
+   features:
     - id: org.jboss.tools.livereload.feature
     - id: org.jboss.ide.eclipse.as.feature
  -
   jetty-launcher:
    repo: http://eclipse-jetty.github.io/update/
-   features: 
+   features:
     - id: net.sourceforge.eclipsejetty.feature
  -
   mutation-tests:
    repo: http://eclipse.pitest.org/release
-   features: 
+   features:
     - id: org.pitest.pitclipse.feature
  -
   m2eclipse-buildhelper:
    repo: http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/
-   features: 
+   features:
     - id: org.sonatype.m2e.buildhelper.feature
  -
   m2eclipse-wtp:
    repo: http://download.eclipse.org/m2e-wtp/milestones/mars/1.2.0/
-   features: 
+   features:
     - id: org.eclipse.m2e.wtp.feature
-
-
+ -
+  m2eclipse-code-quality:
+   repo: http://m2e-code-quality.github.com/m2e-code-quality/site/
+   features:
+    - id: com.basistech.m2e.code.quality.checkstyle.feature
 

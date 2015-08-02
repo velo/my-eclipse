@@ -70,8 +70,6 @@
     <feature id="io.tesla.ide.feature" installMode="root"/>
     <feature id="org.eclipse.epp.mpc" installMode="root"/>
     <feature id="org.eclipse.linuxtools.docker.feature" installMode="root"/>
-    <feature id="io.takari.m2e.team.feature" installMode="root"/>
-    <feature id="com.ifedorenko.m2e.nexusdev.feature" installMode="root"/>
     <feature id="io.tesla.m2e.onboarding.feature" installMode="root"/>
     <feature id="org.dadacoalition.yedit.feature" installMode="root"/>
     <feature id="com.marvinformatics.formatter.feature" installMode="root"/>
@@ -83,6 +81,7 @@
     <feature id="org.pitest.pitclipse.feature" installMode="root"/>
     <feature id="org.sonatype.m2e.buildhelper.feature" installMode="root"/>
     <feature id="org.eclipse.m2e.wtp.feature" installMode="root"/>
+    <feature id="com.basistech.m2e.code.quality.checkstyle.feature" installMode="root"/>
   </features>
   
   <configurations>

@@ -67,66 +67,61 @@
       <id>eclipse</id>
       <url>http://download.eclipse.org/releases/mars</url>
       <layout>p2</layout>
-    </repository>              
-    <repository>
-      <id>takari-team</id>
-      <url>https://otto.takari.io/content/sites/m2e.extras/takari-team/0.1.0/N/LATEST/</url>
-      <layout>p2</layout>
-    </repository>              
-    <repository>
-      <id>nexuside</id>
-      <url>https://otto.takari.io/content/sites/m2e.extras/nexuside/1.0.0/N/1.0.0.201303100224/</url>
-      <layout>p2</layout>
-    </repository>              
+    </repository>
     <repository>
       <id>onboarding</id>
       <url>https://otto.takari.io/content/sites/m2e.extras/m2eclipse-onboarding/0.0.1/N/0.0.1.201406270046/</url>
       <layout>p2</layout>
-    </repository>              
+    </repository>
     <repository>
       <id>yedit</id>
       <url>http://dadacoalition.org/yedit/</url>
       <layout>p2</layout>
-    </repository>              
+    </repository>
     <repository>
       <id>formatter-plugin</id>
       <url>http://velo.github.io/maven-formatter-plugin/p2/1.5.0</url>
       <layout>p2</layout>
-    </repository>              
+    </repository>
     <repository>
       <id>grep-console</id>
       <url>http://eclipse.schedenig.name</url>
       <layout>p2</layout>
-    </repository>              
+    </repository>
     <repository>
       <id>code-coverage</id>
       <url>http://update.eclemma.org/</url>
       <layout>p2</layout>
-    </repository>              
+    </repository>
     <repository>
       <id>live-reload</id>
       <url>http://download.jboss.org/jbosstools/mars/development/updates/core/</url>
       <layout>p2</layout>
-    </repository>              
+    </repository>
     <repository>
       <id>jetty-launcher</id>
       <url>http://eclipse-jetty.github.io/update/</url>
       <layout>p2</layout>
-    </repository>              
+    </repository>
     <repository>
       <id>mutation-tests</id>
       <url>http://eclipse.pitest.org/release</url>
       <layout>p2</layout>
-    </repository>              
+    </repository>
     <repository>
       <id>m2eclipse-buildhelper</id>
       <url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/</url>
       <layout>p2</layout>
-    </repository>              
+    </repository>
     <repository>
       <id>m2eclipse-wtp</id>
       <url>http://download.eclipse.org/m2e-wtp/milestones/mars/1.2.0/</url>
       <layout>p2</layout>
-    </repository>              
+    </repository>
+    <repository>
+      <id>m2eclipse-code-quality</id>
+      <url>http://m2e-code-quality.github.com/m2e-code-quality/site/</url>
+      <layout>p2</layout>
+    </repository>
   </repositories>
 </project>
