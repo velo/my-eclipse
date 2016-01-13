@@ -74,7 +74,7 @@ featureSets:
     - id: com.mountainminds.eclemma.feature
  -
   live-reload:
-   repo: http://download.jboss.org/jbosstools/mars/development/updates/core/
+   repo: http://download.jboss.org/jbosstools/mars/stable/updates/
    features:
     - id: org.jboss.tools.livereload.feature
     - id: org.jboss.ide.eclipse.as.feature
@@ -103,4 +103,24 @@ featureSets:
    repo: http://m2e-code-quality.github.com/m2e-code-quality/site/
    features:
     - id: com.basistech.m2e.code.quality.checkstyle.feature
+ -
+  json-edit:
+   repo: https://bitbucket.org/denmiroch/jsontools/raw/ae2e9d683249ef989d940b441e00b74df729164c/JsonSite/
+   features:
+    - id: org.sweetlemonade.eclipse.json.feature
+ -
+  csv-edit:
+   repo: http://csvedit.googlecode.com/svn/trunk/csvedit.update/
+   features:
+    - id: org.fhsolution.eclipse.feature.csvedit
+ -
+  typescript-edit:
+   repo: http://eclipse-update.palantir.com/eclipse-typescript/
+   features:
+    - id: com.palantir.typescript.feature
+ -
+  m2e-apt:
+   repo: http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/
+   features:
+    - id: org.jboss.tools.maven.apt.feature
 

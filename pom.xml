@@ -95,7 +95,7 @@
     </repository>
     <repository>
       <id>live-reload</id>
-      <url>http://download.jboss.org/jbosstools/mars/development/updates/core/</url>
+      <url>http://download.jboss.org/jbosstools/mars/stable/updates/</url>
       <layout>p2</layout>
     </repository>
     <repository>
@@ -121,6 +121,26 @@
     <repository>
       <id>m2eclipse-code-quality</id>
       <url>http://m2e-code-quality.github.com/m2e-code-quality/site/</url>
+      <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>json-edit</id>
+      <url>https://bitbucket.org/denmiroch/jsontools/raw/ae2e9d683249ef989d940b441e00b74df729164c/JsonSite/</url>
+      <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>csv-edit</id>
+      <url>http://csvedit.googlecode.com/svn/trunk/csvedit.update/</url>
+      <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>typescript-edit</id>
+      <url>http://eclipse-update.palantir.com/eclipse-typescript/</url>
+      <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>m2e-apt</id>
+      <url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/</url>
       <layout>p2</layout>
     </repository>
   </repositories>
