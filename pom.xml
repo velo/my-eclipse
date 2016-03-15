@@ -143,5 +143,10 @@
       <url>http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/</url>
       <layout>p2</layout>
     </repository>
+    <repository>
+      <id>gradle</id>
+      <url>http://download.eclipse.org/buildship/updates/e45/releases/1.0/</url>
+      <layout>p2</layout>
+    </repository>
   </repositories>
 </project>

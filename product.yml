@@ -123,4 +123,9 @@ featureSets:
    repo: http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/
    features:
     - id: org.jboss.tools.maven.apt.feature
+ -
+  gradle:
+   repo: http://download.eclipse.org/buildship/updates/e45/releases/1.0/
+   features:
+    - id: org.eclipse.buildship
 
