@@ -65,7 +65,7 @@
   <repositories>
     <repository>
       <id>eclipse</id>
-      <url>http://download.eclipse.org/releases/mars</url>
+      <url>http://download.eclipse.org/releases/neon</url>
       <layout>p2</layout>
     </repository>
     <repository>
@@ -95,7 +95,7 @@
     </repository>
     <repository>
       <id>live-reload</id>
-      <url>http://download.jboss.org/jbosstools/mars/stable/updates/</url>
+      <url>http://download.jboss.org/jbosstools/neon/snapshots/updates/</url>
       <layout>p2</layout>
     </repository>
     <repository>
@@ -115,7 +115,7 @@
     </repository>
     <repository>
       <id>m2eclipse-wtp</id>
-      <url>http://download.eclipse.org/m2e-wtp/milestones/mars/1.2.0/</url>
+      <url>http://download.eclipse.org/m2e-wtp/milestones/neon/1.3/</url>
       <layout>p2</layout>
     </repository>
     <repository>
@@ -146,6 +146,11 @@
     <repository>
       <id>gradle</id>
       <url>http://download.eclipse.org/buildship/updates/e45/releases/1.0/</url>
+      <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>tycho-configurator</id>
+      <url>https://repository.takari.io/content/sites/m2e.extras/m2eclipse-tycho/0.9.0/N/LATEST/</url>
       <layout>p2</layout>
     </repository>
   </repositories>
