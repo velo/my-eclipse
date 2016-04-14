@@ -14,7 +14,7 @@ featureId: "io.tesla.ide.feature"
 productId: "io.tesla.ide.product"
 productName: VizIDE
 introImage: intro-takari.png
-tychoVersion: 0.19.0
+tychoVersion: 0.24.0
 mavenVersion: "1.0.0-SNAPSHOT"
 version: "1.0.0.qualifier"
 cssTheme: io.takari.dark.theme
@@ -133,4 +133,3 @@ featureSets:
    repo: https://repository.takari.io/content/sites/m2e.extras/m2eclipse-tycho/0.9.0/N/LATEST/
    features:
     - id: org.sonatype.tycho.m2e.feature
-
