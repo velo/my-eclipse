@@ -133,3 +133,8 @@ featureSets:
    repo: https://repository.takari.io/content/sites/m2e.extras/m2eclipse-tycho/0.9.0/N/LATEST/
    features:
     - id: org.sonatype.tycho.m2e.feature
+ -
+  jibx:
+   repo: http://velo.github.io/jibx-eclipse/
+   features:
+    - id: org.jibx.eclipse.feature
