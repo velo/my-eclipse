@@ -71,7 +71,7 @@ system("mvn clean package -B")
 # Copy the lombok.jar into place
 FileUtils.cp("lombok.jar", "io.tesla.ide.product/target/products/io.tesla.ide.product/linux/gtk/x86_64")
 
-FileUtils.cp("lombok.jar", "io.tesla.ide.product/target/products/io.tesla.ide.product/macosx/cocoa/x86_64/VizIDE.app/Contents/MacOS")
+FileUtils.cp("lombok.jar", "io.tesla.ide.product/target/products/io.tesla.ide.product/macosx/cocoa/x86_64/Eclipse.app/Contents/MacOS")
 
 FileUtils.cp("lombok.jar", "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64")
 FileUtils.cp("eclipse.exe.manifest", "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64/VizIDE.exe.manifest")
