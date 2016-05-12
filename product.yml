@@ -138,3 +138,8 @@ featureSets:
    repo: http://velo.github.io/jibx-eclipse/
    features:
     - id: org.jibx.eclipse.feature
+ -
+  ajdt:
+   repo: http://download.eclipse.org/tools/ajdt/44/dev/update
+   features:
+    - id: org.eclipse.ajdt
