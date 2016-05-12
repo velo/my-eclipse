@@ -59,7 +59,7 @@ featureSets:
     - id: org.dadacoalition.yedit.feature
  -
   formatter-plugin:
-   repo: http://velo.github.io/maven-formatter-plugin/p2/1.5.0
+   repo: http://velo.github.io/maven-formatter-plugin/p2/LATEST/
    features:
     - id: com.marvinformatics.formatter.feature
  -
