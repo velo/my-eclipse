@@ -110,7 +110,7 @@ featureSets:
     - id: org.sweetlemonade.eclipse.json.feature
  -
   csv-edit:
-   repo: http://csvedit.googlecode.com/svn/trunk/csvedit.update/
+   repo: https://raw.githubusercontent.com/SegFaultError/CsvEdit/master/csvedit.update/
    features:
     - id: org.fhsolution.eclipse.feature.csvedit
  -
