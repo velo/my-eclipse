@@ -2,6 +2,8 @@ language: ruby
 
 rvm:
  - 2.2.2
+jdk:
+ - oraclejdk9
 
 install:
   - gem install mustache
