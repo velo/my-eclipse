@@ -18,10 +18,6 @@ repositories = []
 features = []
 featureSets = []
 
-product['repos'].each do |repo|
-  repositories << repo
-end
-
 product['featureSets'].each do |featureSetHolder|
   featureSetHolder.each do |id,featureSet|
     unless featureSet['repo'].nil?
