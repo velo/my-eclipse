@@ -14,7 +14,7 @@ featureId: "io.tesla.ide.feature"
 productId: "io.tesla.ide.product"
 productName: VizIDE
 introImage: intro-takari.png
-tychoVersion: 0.24.0
+tychoVersion: 0.25.0
 mavenVersion: "1.0.0-SNAPSHOT"
 version: "1.0.0.qualifier"
 cssTheme: io.takari.dark.theme
@@ -143,3 +143,8 @@ featureSets:
    repo: http://download.eclipse.org/tools/ajdt/44/dev/update
    features:
     - id: org.eclipse.ajdt
+ -
+  takari:
+   repo: https://download.takari.io/eclipse/takari-lifecycle/
+   features:
+    - id: io.takari.m2e.lifecycle.feature
