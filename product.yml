@@ -148,3 +148,9 @@ featureSets:
    repo: https://download.takari.io/eclipse/takari-lifecycle/
    features:
     - id: io.takari.m2e.lifecycle.feature
+ -
+  mavendev:
+   repo: http://ifedorenko.github.com/m2e-extras/
+   features:
+    - id: com.ifedorenko.m2e.sourcelookup.feature
+    - id: com.ifedorenko.m2e.mavendev.feature
