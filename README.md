@@ -1,4 +1,4 @@
-[![Build Status](https://api.shippable.com/projects/5587309dedd7f2c0522bf51e/badge?branchName=master)](https://app.shippable.com/projects/5587309dedd7f2c0522bf51e/builds/latest)
+[![Build Status](https://travis-ci.org/velo/takari-ide.svg?branch=master)](https://travis-ci.org/velo/takari-ide)
 
 # How to build your own Eclipse distribution
 
