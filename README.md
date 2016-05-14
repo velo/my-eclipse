@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/velo/takari-ide.svg?branch=master)](https://travis-ci.org/velo/takari-ide)
+[![Build Status](https://travis-ci.org/velo/my-ide.svg?branch=master)](https://travis-ci.org/velo/my-ide)
 
 # How to build your own Eclipse distribution
 
