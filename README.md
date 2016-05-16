@@ -1,5 +1,5 @@
-my-ide
-======
+my-eclipse
+==========
 
 [![Build Status](https://travis-ci.org/velo/my-ide.svg?branch=master)](https://travis-ci.org/velo/my-ide)
 
