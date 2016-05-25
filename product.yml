@@ -149,3 +149,9 @@ featureSets:
    features:
     - id: com.ifedorenko.m2e.sourcelookup.feature
     - id: com.ifedorenko.m2e.mavendev.feature
+ -
+  angularjs:
+   repo: http://oss.opensagres.fr/angularjs-eclipse/1.1.0/
+   features:
+    - id: org.eclipse.wst.html.webresources.feature
+    - id: angularjs-eclipse-feature
