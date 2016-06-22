@@ -155,3 +155,9 @@ featureSets:
    features:
     - id: org.eclipse.wst.html.webresources.feature
     - id: angularjs-eclipse-feature
+ -
+  testng:
+   repo: http://beust.com/eclipse/
+   features:
+    - id: org.testng.eclipse
+    - id: org.testng.eclipse.maven.feature
