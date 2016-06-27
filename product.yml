@@ -69,7 +69,7 @@ featureSets:
     - id: com.mountainminds.eclemma.feature
  -
   live-reload:
-   repo: http://download.jboss.org/jbosstools/neon/snapshots/updates/
+   repo: http://download.jboss.org/jbosstools/neon/stable/updates/
    features:
     - id: org.jboss.tools.livereload.feature
     - id: org.jboss.ide.eclipse.as.feature
@@ -135,7 +135,7 @@ featureSets:
     - id: org.jibx.eclipse.feature
  -
   ajdt:
-   repo: http://download.eclipse.org/tools/ajdt/44/dev/update
+   repo: http://download.eclipse.org/tools/ajdt/43/update
    features:
     - id: org.eclipse.ajdt
  -
