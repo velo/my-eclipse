@@ -161,3 +161,8 @@ featureSets:
    features:
     - id: org.testng.eclipse
     - id: org.testng.eclipse.maven.feature
+ -
+  m2e-maven-dependency-plugin:
+   repo: http://ianbrandt.github.io/m2e-maven-dependency-plugin/0.0.4/
+   features:
+    - id: com.ianbrandt.tools.m2e.mdp.feature
