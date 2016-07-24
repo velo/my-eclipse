@@ -68,7 +68,7 @@ featureSets:
    features:
     - id: com.mountainminds.eclemma.feature
  -
-  live-reload:
+  jboss-tools:
    repo: http://download.jboss.org/jbosstools/neon/stable/updates/
    features:
     - id: org.jboss.tools.livereload.feature
