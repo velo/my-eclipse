@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: http://download.eclipse.org/releases/neon
+   repo: http://download.eclipse.org/eclipse/updates/4.7milestones/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -40,7 +40,6 @@ featureSets:
     - id: org.eclipse.equinox.p2.user.ui
     - id: org.eclipse.egit
     - id: io.tesla.ide.feature
-    - id: org.eclipse.epp.mpc
     - id: org.eclipse.linuxtools.docker.feature
  -
   onboarding:
@@ -134,11 +133,11 @@ featureSets:
    features:
     - id: org.jibx.eclipse.feature
  -
-  ajdt:
-   repo: http://download.eclipse.org/tools/ajdt/43/update
-   features:
-    - id: org.eclipse.ajdt
- -
+#  ajdt:
+#   repo: http://download.eclipse.org/tools/ajdt/43/update
+#   features:
+#    - id: org.eclipse.ajdt
+# -
   takari:
    repo: https://download.takari.io/eclipse/takari-lifecycle/
    features:
