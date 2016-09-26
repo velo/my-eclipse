@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: http://download.eclipse.org/eclipse/updates/4.7milestones/
+   repo: http://download.eclipse.org/eclipse/updates/milestones/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -40,8 +40,17 @@ featureSets:
     - id: org.eclipse.equinox.p2.user.ui
     - id: org.eclipse.egit
     - id: io.tesla.ide.feature
+ -
+  docker:
+   repo: http://download.eclipse.org/linuxtools/update-docker-2.0.0/
+   features:
     - id: org.eclipse.linuxtools.docker.feature
  -
+#  marketplace:
+#   repo: http://download.eclipse.org/mpc/nightly/
+#   features:
+#    - id: org.eclipse.epp.mpc
+# -
   onboarding:
    repo: https://otto.takari.io/content/sites/m2e.extras/m2eclipse-onboarding/0.0.1/N/0.0.1.201406270046/
    features:
@@ -68,10 +77,11 @@ featureSets:
     - id: com.mountainminds.eclemma.feature
  -
   jboss-tools:
-   repo: http://download.jboss.org/jbosstools/neon/stable/updates/
+   repo: http://download.jboss.org/jbosstools/neon/development/updates/
    features:
     - id: org.jboss.tools.livereload.feature
     - id: org.jboss.ide.eclipse.as.feature
+    - id: org.jboss.tools.maven.sourcelookup.feature
  -
   jetty-launcher:
    repo: http://eclipse-jetty.github.io/update/
@@ -134,7 +144,7 @@ featureSets:
     - id: org.jibx.eclipse.feature
  -
 #  ajdt:
-#   repo: http://download.eclipse.org/tools/ajdt/43/update
+#   repo: http://download.eclipse.org/tools/ajdt/46/dev/update
 #   features:
 #    - id: org.eclipse.ajdt
 # -
@@ -165,3 +175,8 @@ featureSets:
    repo: http://ianbrandt.github.io/m2e-maven-dependency-plugin/0.0.4/
    features:
     - id: com.ianbrandt.tools.m2e.mdp.feature
+# -
+#  java9:
+#   repo: http://download.eclipse.org/eclipse/updates/4.7-P-builds/
+#   features:
+#    - id: org.eclipse.jdt.java9patch
