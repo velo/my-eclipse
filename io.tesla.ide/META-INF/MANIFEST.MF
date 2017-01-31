@@ -5,17 +5,17 @@ Bundle-SymbolicName: io.tesla.ide;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.eclipse.platform,
  org.eclipse.equinox.app,
- org.eclipse.ui;bundle-version="[3.2.0,4.0.0)",
- org.eclipse.help.ui;bundle-version="[4.0.0,5.0.0)",
- org.eclipse.help.base;bundle-version="[4.0.0,5.0.0)",
- org.eclipse.ui.cheatsheets;bundle-version="[3.2.0,4.0.0)",
- org.eclipse.ui.ide.application;bundle-version="[1.0.0,2.0.0)",
- org.eclipse.core.filesystem;bundle-version="[1.4.100,2.0.0)",
- org.eclipse.ui.ide;bundle-version="[3.10.1,4.0.0)",
- org.eclipse.m2e.core.ui;bundle-version="[1.5.0,1.6.1)",
- org.eclipse.m2e.core;bundle-version="[1.5.0,1.6.1)"
+ org.eclipse.ui,
+ org.eclipse.help.ui,
+ org.eclipse.help.base,
+ org.eclipse.ui.cheatsheets,
+ org.eclipse.ui.ide.application,
+ org.eclipse.core.filesystem,
+ org.eclipse.ui.ide,
+ org.eclipse.m2e.core.ui,
+ org.eclipse.m2e.core
 Bundle-ActivationPolicy: lazy
 Eclipse-BundleShape: dir
