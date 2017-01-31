@@ -61,15 +61,15 @@
     </activity>
 
 
-    <activity name="%activity.team.cvs" description="%activity.team.cvs.desc"
-      id="org.eclipse.team.cvs">
+    <activity name="%activity.team.git" description="%activity.team.git.desc"
+      id="org.eclipse.team.git">
     </activity>
 
     <activity name="%activity.team" description="%activity.team.desc"
       id="org.eclipse.team">
     </activity>
 
-    <activityRequirementBinding activityId="org.eclipse.team.cvs"
+    <activityRequirementBinding activityId="org.eclipse.team.git"
       requiredActivityId="org.eclipse.team">
     </activityRequirementBinding>
 
@@ -110,11 +110,11 @@
     <activityPatternBinding activityId="org.eclipse.team"
       pattern="org\.eclipse\.compare/compareWithPatch">
     </activityPatternBinding>
-    <activityPatternBinding activityId="org.eclipse.team.cvs"
-      pattern="org\.eclipse\.team\.cvs\.ui/.*">
+    <activityPatternBinding activityId="org.eclipse.team.git"
+      pattern="org\.eclipse\.team\.git\.ui/.*">
     </activityPatternBinding>
-    <activityPatternBinding activityId="org.eclipse.team.cvs"
-      pattern="org\.eclipse\.team\.cvs\.core/.*cvsnature">
+    <activityPatternBinding activityId="org.eclipse.team.git"
+      pattern="org\.eclipse\.team\.git\.core/.*gitnature">
     </activityPatternBinding>
 
     <category name="%activity.cat.development" description="%activity.cat.development.desc"
@@ -141,7 +141,7 @@
       categoryId="org.eclipse.categories.teamCategory">
     </categoryActivityBinding>
 
-    <categoryActivityBinding activityId="org.eclipse.team.cvs"
+    <categoryActivityBinding activityId="org.eclipse.team.git"
       categoryId="org.eclipse.categories.teamCategory">
     </categoryActivityBinding>
 
@@ -158,7 +158,7 @@
     <defaultEnablement id="org.eclipse.team">
     </defaultEnablement>
 
-    <defaultEnablement id="org.eclipse.team.cvs">
+    <defaultEnablement id="org.eclipse.team.git">
     </defaultEnablement>
     <activity description="%activity.ant.desc" id="org.eclipse.antDevelopment"
       name="%activity.ant">
