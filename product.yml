@@ -183,3 +183,13 @@ featureSets:
    repo: http://download.eclipse.org/eclipse/updates/4.7-P-builds/
    features:
     - id: org.eclipse.jdt.java9patch
+ -
+  markdown-editor:
+   repo: http://www.nodeclipse.org/updates/markdown/
+   features:
+    - id: markdown.editor.feature
+ -
+  markdown-preview:
+   repo: https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/
+   features:
+    - id: code.satyagraha.gfm.viewer.feature
