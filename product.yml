@@ -193,3 +193,8 @@ featureSets:
    repo: https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/
    features:
     - id: code.satyagraha.gfm.viewer.feature
+ -
+  pydev:
+   repo: http://www.pydev.org/updates/
+   features:
+    - id: org.python.pydev.feature
