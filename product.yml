@@ -83,14 +83,7 @@ featureSets:
   jboss-tools:
    repo: http://download.jboss.org/jbosstools/neon/development/updates/
    features:
-    - id: org.jboss.tools.livereload.feature
-    - id: org.jboss.ide.eclipse.as.feature
     - id: org.jboss.tools.maven.sourcelookup.feature
- -
-  jetty-launcher:
-   repo: http://eclipse-jetty.github.io/update/
-   features:
-    - id: net.sourceforge.eclipsejetty.feature
  -
   mutation-tests:
    repo: http://eclipse.pitest.org/release
@@ -121,30 +114,15 @@ featureSets:
    features:
     - id: org.fhsolution.eclipse.feature.csvedit
  -
-  typescript-edit:
-   repo: http://eclipse-update.palantir.com/eclipse-typescript/
-   features:
-    - id: com.palantir.typescript.feature
- -
   m2e-apt:
    repo: http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/
    features:
     - id: org.jboss.tools.maven.apt.feature
  -
-  gradle:
-   repo: http://download.eclipse.org/buildship/updates/e46/releases/2.x/
-   features:
-    - id: org.eclipse.buildship
- -
   tycho-configurator:
    repo: https://repository.takari.io/content/sites/m2e.extras/m2eclipse-tycho/0.9.0/N/LATEST/
    features:
     - id: org.sonatype.tycho.m2e.feature
- -
-  jibx:
-   repo: http://velo.github.io/jibx-eclipse/
-   features:
-    - id: org.jibx.eclipse.feature
 # -
 #  ajdt:
 #   repo: http://download.eclipse.org/tools/ajdt/46/dev/update
@@ -161,12 +139,6 @@ featureSets:
    features:
     - id: com.ifedorenko.m2e.sourcelookup.feature
     - id: com.ifedorenko.m2e.mavendev.feature
- -
-  angularjs:
-   repo: http://oss.opensagres.fr/angularjs-eclipse/1.1.0/
-   features:
-    - id: org.eclipse.wst.html.webresources.feature
-    - id: angularjs-eclipse-feature
  -
   testng:
    repo: http://beust.com/eclipse/
@@ -193,8 +165,3 @@ featureSets:
    repo: https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/
    features:
     - id: code.satyagraha.gfm.viewer.feature
- -
-  pydev:
-   repo: http://www.pydev.org/updates/
-   features:
-    - id: org.python.pydev.feature
