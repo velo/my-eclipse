@@ -119,6 +119,11 @@ featureSets:
    features:
     - id: org.jboss.tools.maven.apt.feature
  -
+  gradle:
+   repo: http://download.eclipse.org/buildship/updates/e46/releases/2.x/
+   features:
+    - id: org.eclipse.buildship
+ -
   tycho-configurator:
    repo: https://repository.takari.io/content/sites/m2e.extras/m2eclipse-tycho/0.9.0/N/LATEST/
    features:
@@ -150,11 +155,11 @@ featureSets:
    repo: http://ianbrandt.github.io/m2e-maven-dependency-plugin/0.0.4/
    features:
     - id: com.ianbrandt.tools.m2e.mdp.feature
- -
-  java9:
-   repo: http://download.eclipse.org/eclipse/updates/4.7-P-builds/
-   features:
-    - id: org.eclipse.jdt.java9patch
+#  -
+#   java9:
+#    repo: http://download.eclipse.org/eclipse/updates/4.7-P-builds/
+#    features:
+#     - id: org.eclipse.jdt.java9patch
  -
   markdown-editor:
    repo: http://www.nodeclipse.org/updates/markdown/
@@ -165,3 +170,9 @@ featureSets:
    repo: https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/
    features:
     - id: code.satyagraha.gfm.viewer.feature
+ -
+  groovy-eclipse:
+   repo: http://dist.springsource.org/snapshot/GRECLIPSE/e4.7/
+   features:
+    - id: org.codehaus.groovy.eclipse.feature
+    - id: org.codehaus.groovy.m2eclipse.feature
