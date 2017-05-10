@@ -176,3 +176,8 @@ featureSets:
    features:
     - id: org.codehaus.groovy.eclipse.feature
     - id: org.codehaus.groovy.m2eclipse.feature
+ -
+  editorconfig:
+   repo: https://editorconfig-eclipse.github.io/repository
+   features:
+    - id: editorconfig-eclipse-feature
