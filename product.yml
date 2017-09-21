@@ -14,7 +14,7 @@ featureId: "io.tesla.ide.feature"
 productId: "io.tesla.ide.product"
 productName: VizIDE
 introImage: intro-takari.png
-tychoVersion: 0.26.0
+tychoVersion: 1.0.0
 mavenVersion: "1.0.0-SNAPSHOT"
 version: "1.0.0.qualifier"
 cssTheme: io.takari.dark.theme
@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: http://download.eclipse.org/releases/oxygen/
+   repo: http://download.eclipse.org/staging/photon/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -50,11 +50,6 @@ featureSets:
   m2e:
    features:
     - id: org.eclipse.m2e.feature
- -
-  marketplace:
-   repo: http://download.eclipse.org/mpc/drops/1.6.0/v20170201-1850/
-   features:
-    - id: org.eclipse.epp.mpc
  -
   onboarding:
    repo: https://otto.takari.io/content/sites/m2e.extras/m2eclipse-onboarding/0.0.1/N/0.0.1.201406270046/
@@ -82,7 +77,7 @@ featureSets:
     - id: org.eclipse.eclemma.feature
  -
   jboss-tools:
-   repo: http://download.jboss.org/jbosstools/neon/development/updates/
+   repo: http://download.jboss.org/jbosstools/oxygen/stable/updates/
    features:
     - id: org.jboss.tools.maven.sourcelookup.feature
  -
@@ -176,3 +171,13 @@ featureSets:
    repo: https://editorconfig-eclipse.github.io/repository
    features:
     - id: editorconfig-eclipse-feature
+ -
+  anyedittools:
+   repo: https://raw.githubusercontent.com/velo/anyedittools/p2/repository
+   features:
+    - id: AnyEditTools
+ -
+  python-ide:
+   repo: https://dl.bintray.com/fabioz/pydev/6.0.0/
+   features:
+    - id: org.python.pydev.feature
