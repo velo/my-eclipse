@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: http://download.eclipse.org/eclipse/updates/4.8milestones/
+   repo: http://download.eclipse.org/eclipse/updates/4.8/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
