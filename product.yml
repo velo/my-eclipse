@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: http://download.eclipse.org/eclipse/updates/4.8/
+   repo: http://download.eclipse.org/eclipse/updates/4.9/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -48,7 +48,7 @@ featureSets:
     - id: org.eclipse.linuxtools.docker.feature
  -
   m2e:
-   repo: https://repository.takari.io/content/sites/m2e.extras/m2e/1.9.0/N/LATEST/
+   repo: http://download.eclipse.org/technology/m2e/releases/
    features:
     - id: org.eclipse.m2e.feature
  -
@@ -96,11 +96,6 @@ featureSets:
    features:
     - id: org.eclipse.m2e.wtp.feature
  -
-  m2eclipse-code-quality:
-   repo: http://m2e-code-quality.github.com/m2e-code-quality/site/
-   features:
-    - id: com.basistech.m2e.code.quality.checkstyle.feature
- -
   json-edit:
    repo: https://bitbucket.org/denmiroch/jsontools/raw/ae2e9d683249ef989d940b441e00b74df729164c/JsonSite/
    features:
@@ -117,7 +112,7 @@ featureSets:
     - id: org.jboss.tools.maven.apt.feature
  -
   gradle:
-   repo: http://download.eclipse.org/buildship/updates/e46/releases/2.x/
+   repo: http://download.eclipse.org/buildship/updates/e47/releases/2.x/
    features:
     - id: org.eclipse.buildship
  -
@@ -149,7 +144,7 @@ featureSets:
     - id: org.testng.eclipse.maven.feature
  -
   m2e-maven-dependency-plugin:
-   repo: http://ianbrandt.github.io/m2e-maven-dependency-plugin/0.0.4/
+   repo: http://ianbrandt.github.io/m2e-maven-dependency-plugin/
    features:
     - id: com.ianbrandt.tools.m2e.mdp.feature
  -
@@ -174,7 +169,7 @@ featureSets:
     - id: AnyEditTools
  -
   python-ide:
-   repo: https://dl.bintray.com/fabioz/pydev/6.0.0/
+   repo: https://www.pydev.org/updates/
    features:
     - id: org.python.pydev.feature
  -
@@ -187,3 +182,9 @@ featureSets:
    repo: https://dl.bintray.com/de-jcup/basheditor/
    features:
     - id: de.jcup.basheditor
+ -
+  java11:
+   repo: http://download.eclipse.org/eclipse/updates/4.9-P-builds/
+   features:
+    - id: org.eclipse.jdt.java11patch
+    - id: org.eclipse.pde.java11patch
