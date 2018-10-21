@@ -48,7 +48,7 @@ featureSets:
     - id: org.eclipse.linuxtools.docker.feature
  -
   m2e:
-   repo: http://download.eclipse.org/technology/m2e/releases/
+   repo: http://download.eclipse.org/technology/m2e/snapshots/1.10.0/latest/
    features:
     - id: org.eclipse.m2e.feature
  -
@@ -169,7 +169,7 @@ featureSets:
     - id: AnyEditTools
  -
   python-ide:
-   repo: https://www.pydev.org/updates/
+   repo: https://dl.bintray.com/fabioz/pydev/6.5.0/
    features:
     - id: org.python.pydev.feature
  -
