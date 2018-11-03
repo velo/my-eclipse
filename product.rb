@@ -70,8 +70,8 @@ FileUtils.mkdir_p(workspace)
 # link workspace
 FileUtils.ln_s(workspace, "io.tesla.ide.product/target/products/io.tesla.ide.product/linux/gtk/x86_64/workspace")
 FileUtils.ln_s(workspace, "io.tesla.ide.product/target/products/io.tesla.ide.product/macosx/cocoa/x86_64/Eclipse.app/Contents/MacOS/workspace")
-FileUtils.cp("eclipse.exe.manifest", "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64/VizIDE.exe.manifest")
-FileUtils.ln_s(workspace, "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64/workspace")
+# FileUtils.cp("eclipse.exe.manifest", "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64/VizIDE.exe.manifest")
+# FileUtils.ln_s(workspace, "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64/workspace")
 
 
 system("./io.tesla.ide.product/target/products/io.tesla.ide.product/macosx/cocoa/x86_64/Eclipse.app/Contents/MacOS/VizIDE -clean -purgeHistory -application org.eclipse.equinox.p2.director -noSplash -repository http://infinitest.github.io -installIUs org.infinitest.eclipse.feature.feature.group")

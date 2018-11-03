@@ -123,16 +123,16 @@ public class TakariIde extends IDEApplication {
     }
 
   }
-  
-  
+
+
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see org.eclipse.equinox.app.IApplication#start(org.eclipse.equinox.app.IApplicationContext context)
    */
   @Override
   public Object start(IApplicationContext appContext) throws Exception {
-        
+
     //Display display = createDisplay();
     // processor must be created before we start event loop
     //DelayedEventsProcessor processor = new DelayedEventsProcessor(display);
@@ -157,7 +157,7 @@ public class TakariIde extends IDEApplication {
         }
       }
     }
-    
+
     try {
 
       // look and see if there's a splash shell we can parent off of
@@ -208,7 +208,7 @@ public class TakariIde extends IDEApplication {
 
   /**
    * Creates the display used by the application.
-   * 
+   *
    * @return the display used by the application
    */
   @Override
@@ -218,7 +218,7 @@ public class TakariIde extends IDEApplication {
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see org.eclipse.core.runtime.IExecutableExtension#setInitializationData(org.eclipse.core.runtime.IConfigurationElement, java.lang.String, java.lang.Object)
    */
   @Override
@@ -228,11 +228,11 @@ public class TakariIde extends IDEApplication {
 
   /**
    * Return <code>null</code> if a valid workspace path has been set and an exit code otherwise. Prompt for and set the path if possible and required.
-   * 
+   *
    * @param applicationArguments the command line arguments
    * @return <code>null</code> if a valid instance location has been set and an exit code otherwise
    */
-  private Object checkInstanceLocation(Shell shell, Map applicationArguments) {
+  protected Object checkInstanceLocation(Shell shell, Map applicationArguments) {
     // -data @none was specified but an ide requires workspace
     Location instanceLoc = Platform.getInstanceLocation();
     if (instanceLoc == null) {
@@ -324,7 +324,7 @@ public class TakariIde extends IDEApplication {
   /**
    * Open a workspace selection dialog on the argument shell, populating the argument data with the user's selection. Perform first level validation on the selection by comparing the version
    * information. This method does not examine the runtime state (e.g., is the workspace already locked?).
-   * 
+   *
    * @param shell
    * @param launchData
    * @param force setting to true makes the dialog open regardless of the showDialog value
@@ -374,10 +374,10 @@ public class TakariIde extends IDEApplication {
   /**
    * Return true if the argument directory is ok to use as a workspace and false otherwise. A version check will be performed, and a confirmation box may be displayed on the argument shell if an older
    * version is detected.
-   * 
+   *
    * @return true if the argument URL is ok to use as a workspace and false otherwise.
    */
-  private boolean checkValidWorkspace(Shell shell, URL url) {
+  protected boolean checkValidWorkspace(Shell shell, URL url) {
     // a null url is not a valid workspace
     if (url == null) {
       return false;
@@ -433,7 +433,7 @@ public class TakariIde extends IDEApplication {
   /**
    * Look at the argument URL for the workspace's version information. Return that version if found and null otherwise.
    */
-  private static Version readWorkspaceVersion(URL workspace) {
+  protected static Version readWorkspaceVersion(URL workspace) {
     File versionFile = getVersionFile(workspace, false);
     if (versionFile == null || !versionFile.exists()) {
       return null;
@@ -521,11 +521,11 @@ public class TakariIde extends IDEApplication {
 
   /**
    * The version file is stored in the metadata area of the workspace. This method returns an URL to the file or null if the directory or file does not exist (and the create parameter is false).
-   * 
+   *
    * @param create If the directory and file does not exist this parameter controls whether it will be created.
    * @return An url to the file or null if the version file does not exist or could not be created.
    */
-  private static File getVersionFile(URL workspaceUrl, boolean create) {
+  protected static File getVersionFile(URL workspaceUrl, boolean create) {
     if (workspaceUrl == null) {
       return null;
     }
@@ -553,13 +553,13 @@ public class TakariIde extends IDEApplication {
   /**
    * @return the major and minor parts of the given version
    */
-  private static Version toMajorMinorVersion(Version version) {
+  protected static Version toMajorMinorVersion(Version version) {
     return new Version(version.getMajor(), version.getMinor(), 0);
   }
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see org.eclipse.equinox.app.IApplication#stop()
    */
   @Override
