@@ -14,7 +14,7 @@ featureId: "io.tesla.ide.feature"
 productId: "io.tesla.ide.product"
 productName: VizIDE
 introImage: intro-takari.png
-tychoVersion: 1.1.0
+tychoVersion: 1.2.0
 mavenVersion: "1.0.0-SNAPSHOT"
 version: "1.0.0.qualifier"
 cssTheme: io.takari.dark.theme
@@ -78,7 +78,7 @@ featureSets:
     - id: org.eclipse.eclemma.feature
  -
   jboss-tools:
-   repo: http://download.jboss.org/jbosstools/oxygen/stable/updates/
+   repo: http://download.jboss.org/jbosstools/photon/stable/updates/
    features:
     - id: org.jboss.tools.maven.sourcelookup.feature
  -
@@ -112,7 +112,7 @@ featureSets:
     - id: org.jboss.tools.maven.apt.feature
  -
   gradle:
-   repo: http://download.eclipse.org/buildship/updates/e47/releases/2.x/
+   repo: http://download.eclipse.org/buildship/updates/e49/snapshots/3.x/
    features:
     - id: org.eclipse.buildship
  -
@@ -188,3 +188,8 @@ featureSets:
    features:
     - id: org.eclipse.jdt.java11patch
     - id: org.eclipse.pde.java11patch
+ -
+  smartsave:
+   repo: https://raw.github.com/mystilleef/eclipse4-smartsave-updatesite/master/com.laboki.eclipse.updatesite.smartsave
+   features:
+    - id: com.laboki.eclipse.feature.smartsave
