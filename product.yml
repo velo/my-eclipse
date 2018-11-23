@@ -187,3 +187,8 @@ featureSets:
    repo: https://raw.github.com/mystilleef/eclipse4-smartsave-updatesite/master/com.laboki.eclipse.updatesite.smartsave
    features:
     - id: com.laboki.eclipse.feature.smartsave
+ -
+  kotlin:
+   repo: https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/
+   features:
+    - id: org.jetbrains.kotlin.feature
