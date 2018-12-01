@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: http://download.eclipse.org/eclipse/updates/4.9/
+   repo: http://download.eclipse.org/eclipse/updates/4.10milestones/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -97,9 +97,9 @@ featureSets:
     - id: org.eclipse.m2e.wtp.feature
  -
   json-edit:
-   repo: https://bitbucket.org/denmiroch/jsontools/raw/ae2e9d683249ef989d940b441e00b74df729164c/JsonSite/
+   repo: http://boothen.github.io/Json-Eclipse-Plugin/
    features:
-    - id: org.sweetlemonade.eclipse.json.feature
+    - id: jsonedit-feature
  -
   csv-edit:
    repo: https://raw.githubusercontent.com/SegFaultError/CsvEdit/master/csvedit.update/
@@ -112,7 +112,7 @@ featureSets:
     - id: org.jboss.tools.maven.apt.feature
  -
   gradle:
-   repo: http://download.eclipse.org/buildship/updates/e49/snapshots/3.x/
+   repo: https://download.eclipse.org/buildship/updates/e49/milestones/3.x/
    features:
     - id: org.eclipse.buildship
  -
