@@ -67,11 +67,16 @@ system("mvn clean package -B")
 workspace = ENV['HOME'] + "/workspace"
 FileUtils.mkdir_p(workspace)
 
-# link workspace
+# Copy the lombok.jar into place
+FileUtils.cp("lombok.jar", "io.tesla.ide.product/target/products/io.tesla.ide.product/linux/gtk/x86_64")
 FileUtils.ln_s(workspace, "io.tesla.ide.product/target/products/io.tesla.ide.product/linux/gtk/x86_64/workspace")
+
+FileUtils.cp("lombok.jar", "io.tesla.ide.product/target/products/io.tesla.ide.product/macosx/cocoa/x86_64/Eclipse.app/Contents/MacOS")
 FileUtils.ln_s(workspace, "io.tesla.ide.product/target/products/io.tesla.ide.product/macosx/cocoa/x86_64/Eclipse.app/Contents/MacOS/workspace")
+
+FileUtils.cp("lombok.jar", "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64")
 # FileUtils.cp("eclipse.exe.manifest", "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64/VizIDE.exe.manifest")
-# FileUtils.ln_s(workspace, "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64/workspace")
+FileUtils.ln_s(workspace, "io.tesla.ide.product/target/products/io.tesla.ide.product/win32/win32/x86_64/workspace")
 
 
 system("./io.tesla.ide.product/target/products/io.tesla.ide.product/macosx/cocoa/x86_64/Eclipse.app/Contents/MacOS/VizIDE -clean -purgeHistory -application org.eclipse.equinox.p2.director -noSplash -repository http://zipeditor.sourceforge.net/update -installIUs zipeditor.feature.group")
