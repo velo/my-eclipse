@@ -14,7 +14,7 @@ featureId: "io.tesla.ide.feature"
 productId: "io.tesla.ide.product"
 productName: VizIDE
 introImage: intro-takari.png
-tychoVersion: 1.2.0
+tychoVersion: 1.3.0
 mavenVersion: "1.0.0-SNAPSHOT"
 version: "1.0.0.qualifier"
 cssTheme: io.takari.dark.theme
@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: http://download.eclipse.org/eclipse/updates/4.10/
+   repo: http://download.eclipse.org/eclipse/updates/4.11milestones/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -48,15 +48,15 @@ featureSets:
     - id: org.eclipse.linuxtools.docker.feature
  -
   m2e:
-   repo: http://download.eclipse.org/technology/m2e/snapshots/1.10.0/latest/
+   repo: https://download.eclipse.org/technology/m2e/releases/1.10/
    features:
     - id: org.eclipse.m2e.feature
  -
-  onboarding:
-   repo: https://otto.takari.io/content/sites/m2e.extras/m2eclipse-onboarding/0.0.1/N/0.0.1.201406270046/
-   features:
-    - id: io.tesla.m2e.onboarding.feature
- -
+#   onboarding:
+#    repo: https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-onboarding/0.0.1/N/0.0.1.201406270046/
+#    features:
+#     - id: io.tesla.m2e.onboarding.feature
+#  -
   yedit:
    repo: http://dadacoalition.org/yedit/
    features:
@@ -112,7 +112,7 @@ featureSets:
     - id: org.jboss.tools.maven.apt.feature
  -
   gradle:
-   repo: https://download.eclipse.org/buildship/updates/e49/milestones/3.x/
+   repo: https://download.eclipse.org/buildship/updates/e410/releases/
    features:
     - id: org.eclipse.buildship
  -
@@ -125,11 +125,11 @@ featureSets:
 #   repo: http://download.eclipse.org/tools/ajdt/46/dev/update
 #   features:
 #    - id: org.eclipse.ajdt
- -
-  takari:
-   repo: https://download.takari.io/eclipse/takari-lifecycle/
-   features:
-    - id: io.takari.m2e.lifecycle.feature
+#  -
+#   takari:
+#    repo: https://download.takari.io/eclipse/takari-lifecycle/
+#    features:
+#     - id: io.takari.m2e.lifecycle.feature
  -
   mavendev:
    repo: http://ifedorenko.github.com/m2e-extras/
