@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: http://download.eclipse.org/eclipse/updates/4.11milestones/
+   repo: http://download.eclipse.org/eclipse/updates/4.11/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -182,11 +182,11 @@ featureSets:
    repo: https://dl.bintray.com/de-jcup/basheditor/
    features:
     - id: de.jcup.basheditor
- -
-  smartsave:
-   repo: https://raw.github.com/mystilleef/eclipse4-smartsave-updatesite/master/com.laboki.eclipse.updatesite.smartsave
-   features:
-    - id: com.laboki.eclipse.feature.smartsave
+#  -
+#   smartsave:
+#    repo: https://raw.github.com/mystilleef/eclipse4-smartsave-updatesite/master/com.laboki.eclipse.updatesite.smartsave
+#    features:
+#     - id: com.laboki.eclipse.feature.smartsave
  -
   kotlin:
    repo: https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/
