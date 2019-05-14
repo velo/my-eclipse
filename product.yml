@@ -145,7 +145,7 @@ featureSets:
     - id: com.ianbrandt.tools.m2e.mdp.feature
  -
   markdown-editor:
-   repo: http://www.nodeclipse.org/updates/markdown/
+   repo: https://nodeclipse.github.io/updates/
    features:
     - id: markdown.editor.feature
  -
