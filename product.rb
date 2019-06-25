@@ -62,7 +62,7 @@ template('templates/product.mustache', "#{productId}/#{productId}", vars)
 template('templates/pom.product.mustache', "#{productId}/pom.xml", vars)
 
 # Run Maven
-system("mvn clean package -B")
+system("mvn clean package -B -U")
 
 workspace = ENV['HOME'] + "/workspace"
 FileUtils.mkdir_p(workspace)

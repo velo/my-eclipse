@@ -111,11 +111,6 @@ featureSets:
    repo: https://download.eclipse.org/buildship/updates/e410/releases/
    features:
     - id: org.eclipse.buildship
- -
-  tycho-configurator:
-   repo: https://repository.takari.io/content/sites/m2e.extras/m2eclipse-tycho/0.9.0/N/LATEST/
-   features:
-    - id: org.sonatype.tycho.m2e.feature
 # -
 #  ajdt:
 #   repo: http://download.eclipse.org/tools/ajdt/46/dev/update
