@@ -12,7 +12,7 @@ groupId: "io.tesla.ide"
 pluginId: "io.tesla.ide"
 featureId: "io.tesla.ide.feature"
 productId: "io.tesla.ide.product"
-productName: VizIDE
+productName: MeIDE
 introImage: intro-takari.png
 tychoVersion: 1.4.0
 mavenVersion: "1.0.0-SNAPSHOT"
@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: https://download.eclipse.org/releases/2019-06/
+   repo: https://download.eclipse.org/releases/2019-09/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -42,7 +42,6 @@ featureSets:
     - id: io.tesla.ide.feature
     - id: org.eclipse.m2e.feature
     - id: org.eclipse.wst.jsdt.feature
-    - id: org.eclipse.m2e.feature
  -
   docker:
    features:
@@ -183,3 +182,8 @@ featureSets:
    repo: https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/
    features:
     - id: org.jetbrains.kotlin.feature
+ -
+  pde-m2e:
+   repo: http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST/
+   features:
+    - id: org.sonatype.tycho.m2e.feature
