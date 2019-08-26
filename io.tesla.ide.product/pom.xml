@@ -11,7 +11,7 @@
 
   <artifactId>io.tesla.ide.rcp</artifactId>
   <packaging>eclipse-repository</packaging>
-  <name>VizIDE :: Distribution</name>
+  <name>MeIDE :: Distribution</name>
 
   <build>
     <plugins>
