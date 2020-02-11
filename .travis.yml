@@ -1,0 +1,13 @@
+language: ruby
+
+rvm:
+ - 2.2.2
+jdk:
+ - oraclejdk8
+
+install:
+  - gem install mustache
+
+script:
+  - ./product.rb
+  

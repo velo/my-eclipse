@@ -1,0 +1,8 @@
+target/
+.settings/
+.classpath
+.project
+workspace/
+pom.xml
+
+io.tesla.ide.product/io.tesla.ide.product

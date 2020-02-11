@@ -1,0 +1,183 @@
+# Copyright (c) 2015 to Jason van Zyl
+# All rights reserved. This program and the accompanying materials                                                                                                                                          
+# are made available under the terms of the Eclipse Public License v1.0                                                                                                                                     
+# which accompanies this distribution, and is available at                                                                                                                                                  
+# http://www.eclipse.org/legal/epl-v10.html   
+#
+# This generates everything needed to create a distributions
+#
+# https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/packages/org.eclipse.epp.package.rcp.feature/feature.xml
+
+groupId: "io.tesla.ide"
+pluginId: "io.tesla.ide"
+featureId: "io.tesla.ide.feature"
+productId: "io.tesla.ide.product"
+productName: MeIDE
+introImage: intro-takari.png
+tychoVersion: 1.6.0
+mavenVersion: "1.0.0-SNAPSHOT"
+version: "1.0.0.qualifier"
+cssTheme: io.takari.dark.theme
+applicationId: io.tesla.ide.application
+applicationClass: io.tesla.ide.TakariIde
+   
+modules:
+ - io.tesla.ide
+ - io.tesla.ide.feature
+ - io.tesla.ide.product
+
+featurePlugins:
+ - io.tesla.ide
+
+featureSets: 
+ -
+  eclipse:
+   repo: https://download.eclipse.org/releases/2019-09/
+   features:
+    - id: org.eclipse.platform
+    - id: org.eclipse.rcp
+    - id: org.eclipse.jdt
+    - id: org.eclipse.equinox.p2.user.ui
+    - id: org.eclipse.egit
+    - id: io.tesla.ide.feature
+    - id: org.eclipse.m2e.feature
+    - id: org.eclipse.wst.jsdt.feature
+ -
+  docker:
+   features:
+    - id: org.eclipse.linuxtools.docker.feature
+ -
+#   onboarding:
+#    repo: https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-onboarding/0.0.1/N/0.0.1.201406270046/
+#    features:
+#     - id: io.tesla.m2e.onboarding.feature
+#  -
+  yedit:
+   repo: http://dadacoalition.org/yedit/
+   features:
+    - id: org.dadacoalition.yedit.feature
+ -
+  formatter-plugin:
+   repo: http://velo.github.io/maven-formatter-plugin/p2/LATEST/
+   features:
+    - id: com.marvinformatics.formatter.feature
+ -
+  grep-console:
+   repo: http://eclipse.schedenig.name
+   features:
+    - id: name.schedenig.eclipse.grepconsole
+ -
+  code-coverage:
+   repo: http://update.eclemma.org/
+   features:
+    - id: org.eclipse.eclemma.feature
+ -
+  jboss-tools:
+   repo: http://download.jboss.org/jbosstools/photon/stable/updates/
+   features:
+    - id: org.jboss.tools.maven.sourcelookup.feature
+ -
+  mutation-tests:
+   repo: http://eclipse.pitest.org/release
+   features:
+    - id: org.pitest.pitclipse.feature
+ -
+  m2eclipse-buildhelper:
+   repo: https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201405280027/
+   features:
+    - id: org.sonatype.m2e.buildhelper.feature
+ -
+  m2eclipse-wtp:
+   features:
+    - id: org.eclipse.m2e.wtp.feature
+ -
+  json-edit:
+   repo: http://boothen.github.io/Json-Eclipse-Plugin/
+   features:
+    - id: jsonedit-feature
+ -
+  csv-edit:
+   repo: https://raw.githubusercontent.com/SegFaultError/CsvEdit/master/csvedit.update/
+   features:
+    - id: org.fhsolution.eclipse.feature.csvedit
+ -
+  m2e-apt:
+   repo: http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/
+   features:
+    - id: org.jboss.tools.maven.apt.feature
+ -
+  gradle:
+   repo: https://download.eclipse.org/buildship/updates/e410/releases/
+   features:
+    - id: org.eclipse.buildship
+# -
+#  ajdt:
+#   repo: http://download.eclipse.org/tools/ajdt/46/dev/update
+#   features:
+#    - id: org.eclipse.ajdt
+#  -
+#   takari:
+#    repo: https://download.takari.io/eclipse/takari-lifecycle/
+#    features:
+#     - id: io.takari.m2e.lifecycle.feature
+# -
+#  mavendev:
+#   repo: http://ifedorenko.github.com/m2e-extras/
+#   features:
+#    - id: com.ifedorenko.m2e.sourcelookup.feature
+#    - id: com.ifedorenko.m2e.mavendev.feature
+ -
+  m2e-maven-dependency-plugin:
+   repo: http://ianbrandt.github.io/m2e-maven-dependency-plugin/
+   features:
+    - id: com.ianbrandt.tools.m2e.mdp.feature
+ -
+  markdown-editor:
+   repo: https://nodeclipse.github.io/updates/
+   features:
+    - id: markdown.editor.feature
+ -
+  markdown-preview:
+   repo: https://raw.github.com/satyagraha/gfm_viewer/master/p2-composite/
+   features:
+    - id: code.satyagraha.gfm.viewer.feature
+ -
+  editorconfig:
+   repo: https://editorconfig-eclipse.github.io/repository
+   features:
+    - id: editorconfig-eclipse-feature
+ -
+  anyedittools:
+   repo: https://raw.githubusercontent.com/velo/anyedittools/p2/repository
+   features:
+    - id: AnyEditTools
+ -
+  python-ide:
+   repo: https://dl.bintray.com/fabioz/pydev/6.5.0/
+   features:
+    - id: org.python.pydev.feature
+ -
+  jenkins-editor:
+   repo: https://dl.bintray.com/de-jcup/jenkinseditor/
+   features:
+    - id: de.jcup.jenkinseditor.feature
+ -
+  bash-editor:
+   repo: https://dl.bintray.com/de-jcup/basheditor/
+   features:
+    - id: de.jcup.basheditor
+#  -
+#   smartsave:
+#    repo: https://raw.github.com/mystilleef/eclipse4-smartsave-updatesite/master/com.laboki.eclipse.updatesite.smartsave
+#    features:
+#     - id: com.laboki.eclipse.feature.smartsave
+ -
+  kotlin:
+   repo: https://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/last/
+   features:
+    - id: org.jetbrains.kotlin.feature
+ -
+  pde-m2e:
+   repo: https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST/
+   features:
+    - id: org.sonatype.tycho.m2e.feature
