@@ -126,6 +126,12 @@ featureSets:
 #   features:
 #    - id: com.ifedorenko.m2e.sourcelookup.feature
 #    - id: com.ifedorenko.m2e.mavendev.feature
+# -
+#  testng:
+#   repo: http://beust.com/eclipse/
+#   features:
+#    - id: org.testng.eclipse
+#    - id: org.testng.eclipse.maven.feature
  -
   m2e-maven-dependency-plugin:
    repo: http://ianbrandt.github.io/m2e-maven-dependency-plugin/
