@@ -24,6 +24,7 @@
             <id>materialize-products</id>
             <goals>
               <goal>materialize-products</goal>
+              <goal>archive-products</goal>
             </goals>
           </execution>
         </executions>
@@ -33,6 +34,11 @@
               <id>{{productId}}</id>
             </product>
           </products>
+          <formats>
+            <linux>tar.gz</linux>
+            <win32>zip</win32>
+            <macosx>tar.gz</macosx>
+          </formats>
         </configuration>
       </plugin>
     </plugins>

@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: https://download.eclipse.org/releases/2019-09/
+   repo: https://download.eclipse.org/releases/2020-03/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -187,3 +187,8 @@ featureSets:
    repo: https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST/
    features:
     - id: org.sonatype.tycho.m2e.feature
+ -
+  checkstyle:
+   repo: https://m2e-code-quality.github.io/m2e-code-quality-p2-site/
+   features:
+    - id: com.basistech.m2e.code.quality.checkstyle.feature
