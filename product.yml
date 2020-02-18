@@ -188,7 +188,12 @@ featureSets:
    features:
     - id: org.sonatype.tycho.m2e.feature
  -
-  checkstyle:
+  m2e-checkstyle:
    repo: https://m2e-code-quality.github.io/m2e-code-quality-p2-site/
    features:
     - id: com.basistech.m2e.code.quality.checkstyle.feature
+ -
+  checkstyle:
+   repo: https://dl.bintray.com/eclipse-cs/eclipse-cs/8.29.0/
+   features:
+    - id: net.sf.eclipsecs
