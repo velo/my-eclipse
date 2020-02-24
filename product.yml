@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: https://download.eclipse.org/releases/2020-03/
+   repo: https://download.eclipse.org/eclipse/updates/4.15milestones/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -78,9 +78,9 @@ featureSets:
     - id: org.jboss.tools.maven.sourcelookup.feature
  -
   mutation-tests:
-   repo: http://eclipse.pitest.org/release
+   repo: https://dl.bintray.com/kazejiyu/Pitclipse/updates/
    features:
-    - id: org.pitest.pitclipse.feature
+    - id: org.pitest.feature
  -
   m2eclipse-buildhelper:
    repo: https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201405280027/
