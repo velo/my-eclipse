@@ -32,7 +32,7 @@ featurePlugins:
 featureSets: 
  -
   eclipse:
-   repo: https://download.eclipse.org/eclipse/updates/4.15milestones/
+   repo: https://download.eclipse.org/eclipse/updates/4.15/
    features:
     - id: org.eclipse.platform
     - id: org.eclipse.rcp
@@ -44,6 +44,7 @@ featureSets:
     - id: org.eclipse.wst.jsdt.feature
  -
   docker:
+   repo: https://download.eclipse.org/eclipse/updates/4.15milestones/
    features:
     - id: org.eclipse.linuxtools.docker.feature
  -
