@@ -44,9 +44,15 @@ featureSets:
     - id: org.eclipse.wst.jsdt.feature
  -
   docker:
-   repo: https://download.eclipse.org/eclipse/updates/4.15milestones/
+   repo: https://download.eclipse.org/eclipse/updates/4.16/
    features:
     - id: org.eclipse.linuxtools.docker.feature
+ -
+  ssh:
+   repo: http://download.eclipse.org/releases/kepler/
+   features:
+    - id: org.eclipse.rse
+    - id: org.eclipse.rse.useractions
  -
 #   onboarding:
 #    repo: https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-onboarding/0.0.1/N/0.0.1.201406270046/
@@ -57,6 +63,11 @@ featureSets:
    repo: http://dadacoalition.org/yedit/
    features:
     - id: org.dadacoalition.yedit.feature
+ -
+  kubernetes-editor:
+   repo: http://helospark.com/eclipse_plugin/KubeEditUpdateSite/
+   features:
+    - id: com.helospark.KubeEditorFeature
  -
   formatter-plugin:
    repo: http://velo.github.io/maven-formatter-plugin/p2/LATEST/
@@ -74,7 +85,7 @@ featureSets:
     - id: org.eclipse.eclemma.feature
  -
   jboss-tools:
-   repo: http://download.jboss.org/jbosstools/photon/stable/updates/
+   repo: http://download.jboss.org/jbosstools/photon/development/updates/
    features:
     - id: org.jboss.tools.maven.sourcelookup.feature
  -
